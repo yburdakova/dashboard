@@ -22,11 +22,14 @@ import product5 from './product5.jpg';
 import product6 from './product6.jpg';
 import product7 from './product7.jpg';
 import product8 from './product8.jpg';
+import welcome from './welcome-bg.svg'
+
+export const welcome01 =  welcome;
 
 export const gridOrderImage = (props) => (
   <div>
     <img
-      className="rounded-xl h-20 md:ml-3"
+      className="h-20 rounded-xl md:ml-3"
       src={props.ProductImage}
       alt="order-item"
     />
@@ -37,7 +40,7 @@ export const gridOrderStatus = (props) => (
   <button
     type="button"
     style={{ background: props.StatusBg }}
-    className="text-white py-1 px-2 capitalize rounded-2xl text-md"
+    className="px-2 py-1 text-white capitalize rounded-2xl text-md"
   >
     {props.Status}
   </button>
@@ -64,7 +67,7 @@ export const kanbanGrid = [
 const gridEmployeeProfile = (props) => (
   <div className="flex items-center gap-2">
     <img
-      className="rounded-full w-10 h-10"
+      className="w-10 h-10 rounded-full"
       src={props.EmployeeImage}
       alt="employee"
     />
@@ -121,9 +124,9 @@ export const EditorData = () => (
   </div>
 );
 const customerGridImage = (props) => (
-  <div className="image flex gap-4">
+  <div className="flex gap-4 image">
     <img
-      className="rounded-full w-10 h-10"
+      className="w-10 h-10 rounded-full"
       src={props.CustomerImage}
       alt="employee"
     />
@@ -135,8 +138,8 @@ const customerGridImage = (props) => (
 );
 
 const customerGridStatus = (props) => (
-  <div className="flex gap-2 justify-center items-center text-gray-700 capitalize">
-    <p style={{ background: props.StatusBg }} className="rounded-full h-3 w-3" />
+  <div className="flex items-center justify-center gap-2 text-gray-700 capitalize">
+    <p style={{ background: props.StatusBg }} className="w-3 h-3 rounded-full" />
     <p>{props.Status}</p>
   </div>
 );
@@ -621,7 +624,7 @@ export const earningData = [
     title: 'Customers',
     iconColor: '#03C9D7',
     iconBg: '#E5FAFB',
-    pcColor: 'red-600',
+    pcColor: 'red-400',
   },
   {
     icon: <BsBoxSeam />,
@@ -630,7 +633,7 @@ export const earningData = [
     title: 'Products',
     iconColor: 'rgb(255, 244, 229)',
     iconBg: 'rgb(254, 201, 15)',
-    pcColor: 'green-600',
+    pcColor: 'green-400',
   },
   {
     icon: <FiBarChart />,
@@ -640,7 +643,7 @@ export const earningData = [
     iconColor: 'rgb(228, 106, 118)',
     iconBg: 'rgb(255, 244, 229)',
 
-    pcColor: 'green-600',
+    pcColor: 'green-400',
   },
   {
     icon: <HiOutlineRefresh />,
@@ -649,7 +652,7 @@ export const earningData = [
     title: 'Refunds',
     iconColor: 'rgb(0, 194, 146)',
     iconBg: 'rgb(235, 250, 242)',
-    pcColor: 'red-600',
+    pcColor: 'red-400',
   },
 ];
 
