@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Staked = () => {
+const Stacked = () => {
     return (
         <div>
-            Staked
+            Stacked
         </div>
     );
 };
 
-export default Staked;
+export default Stacked;
