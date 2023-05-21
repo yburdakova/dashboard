@@ -8,6 +8,8 @@ import { useStateContext } from '../contexts/ContextProvider';
 
 
 const Ecommerce = () => {
+
+    const {currentColor} = useStateContext();
     return (
         <div className="mt-24">
             <div className="flex flex-wrap justify-center lg:flex-nowrap ">
@@ -21,7 +23,7 @@ const Ecommerce = () => {
                     <div className="mt-6">
                         <Button
                             color='white'
-                            bgColor='blue'
+                            bgColor={currentColor}
                             text='Download'
                             borderRadius='10px'
                             size='md'
@@ -52,7 +54,7 @@ const Ecommerce = () => {
                     ))}
                 </div>
                 <div className="flex flex-wrap justify-center gap-10">
-                    <div className="p-4 m-3 bg-white dark:text-grey-200 rounded-2xl dark:bg-secondary-dark-bg md:w-780">
+                    <div className="p-4 m-3 bg-white dark:text-gray-200 rounded-2xl dark:bg-secondary-dark-bg md:w-780">
                         <div className="flex justify-between">
                             <p className="text-xl font-semibold">Revenue updates</p>
                             <div className="flex items-center gap-4">
@@ -83,19 +85,19 @@ const Ecommerce = () => {
                                 </div>
                                 <div className="mt-5">
                                     <SparkLine
-                                        currentColor='blue'
+                                        currentColor={currentColor}
                                         id='line-sparkline'
                                         type='Line'
                                         height='80px'
                                         width='250px'
                                         data={SparklineAreaData}
-                                        color='blue'
+                                        color={currentColor}
                                     />
                                 </div>
                                 <div className="mt-10">
                                     <Button
                                         color='white'
-                                        bgColor='blue'
+                                        bgColor={currentColor}
                                         text='Dowload Report'
                                         borderRadius='10px'
                                     />
