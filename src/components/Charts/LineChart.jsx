@@ -12,12 +12,15 @@ const LineChart = () => {
         <ChartComponent
             id='line-chart'
             height='420px'
+            legendSettings={{ 
+                visible: true, 
+                textStyle: { color:`${currentMode === 'Dark' ? '#FFFFFF' : '#33373E'}`, size: '16px', fontFamily:['Open Sans', 'sans-serif']},
+            }} 
             primaryXAxis={LinePrimaryXAxis}
             primaryYAxis={LinePrimaryYAxis}
             chartArea={{border: {width:0 }}}
             tooltip={{enable: true}}
             background={currentMode === 'Dark' ? '#33373E' : '#FFFFFF'}
-            className={`text-gray-${currentMode === 'Dark' ? '100' : '600'}`}
 
         >
             <Inject services={[LineSeries, DateTime, Legend, Tooltip]}/>

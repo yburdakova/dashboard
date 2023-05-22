@@ -11,6 +11,10 @@ const SplineAreaChart = () => {
     return (
         <ChartComponent
             id='area-chart'
+            legendSettings={{ 
+                visible: true, 
+                textStyle: { color:`${currentMode === 'Dark' ? '#FFFFFF' : '#33373E'}`, size: '16px', fontFamily:['Open Sans', 'sans-serif']},
+            }} 
             height='420px'
             primaryXAxis={areaPrimaryXAxis}
             primaryYAxis={areaPrimaryYAxis}
