@@ -8,11 +8,12 @@ import { Header } from '../components';
 const Scheduler = () => {
     
     return (
-        <div className="p-2 m-2 mt-24 bg-white md:m-10 md:p-10 rounded-3xl">
+        <div className="p-2 m-2 mt-24 bg-white md:m-10 md:p-10 rounded-3xl dark:bg-main-dark-bg">
             <Header category="App" title="Calendar" />
             <ScheduleComponent
                 height="650px"
                 eventSettings={{ dataSource: scheduleData }}
+                className='rounded-3xl'
             >
                 <ViewsDirective>
                 { ['Day', 'Week', 'WorkWeek', 'Month', 'Agenda'].map((item) => <ViewDirective key={item} option={item} />)}

@@ -12,6 +12,8 @@ export { default as Cart } from './Cart';
 export { default as ChartsHeader } from './ChartsHeader';
 
 export { default as LineChart } from './Charts/LineChart';
+export { default as SplineAreaChart } from './Charts/SplineAreaChart';
 export { default as PieChart } from './Charts/PieChart';
 export { default as SparkLine } from './Charts/SparkLine';
 export { default as StackedChart } from './Charts/StackedChart';
+
