@@ -4,8 +4,8 @@ import React, {useState, createContext, useContext} from "react";
 const StateContext = createContext();
 
 const initialState = {
+    cart:false,
     chat: false,
-    cart: false,
     userProfile: false,
     notification: false,
 };
@@ -18,7 +18,8 @@ export const ContextProvider = ( { children }) => {
     const [isClicked, setIsClicked] = useState(initialState);
     const [currentColor, setCurrentColor] = useState('#03C9D7');
     const [currentMode, setCurrentMode] = useState('Light');
-    const [themeSettings, setThemeSettings] = useState(false)
+    const [themeSettings, setThemeSettings] = useState(false);
+    const [isCartVisible, setIsCartVisible] = useState(false);
 
     const setMode = (e) => {
         setCurrentMode(e.target.value);
@@ -32,7 +33,8 @@ export const ContextProvider = ( { children }) => {
         setThemeSettings(false);
     }
 
-    const handleClick = (clicked) => setIsClicked({ ...initialState, [clicked]: true });
+    const handleClick = (clicked) =>  isClicked[clicked] === false ?  setIsClicked({ ...initialState, [clicked]: true }) :  setIsClicked({ ...initialState, [clicked]: false })
+
 
     return (
         <StateContext.Provider
@@ -43,7 +45,8 @@ export const ContextProvider = ( { children }) => {
                 handleClick,
                 currentColor, setColor,
                 currentMode, setMode,  
-                themeSettings, setThemeSettings             
+                themeSettings, setThemeSettings  ,
+                isCartVisible, setIsCartVisible,         
             }}
         >
             {children}

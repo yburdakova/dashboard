@@ -2,7 +2,7 @@ import React from 'react';
 import { BsCurrencyDollar } from 'react-icons/bs';
 import {GoPrimitiveDot} from 'react-icons/go';
 
-import {StackedChart, Pie, Button, SparkLine} from '../components';
+import {StackedChart, Button, SparkLine} from '../components';
 import { earningData, SparklineAreaData, ecomPieChartData, welcome01 } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 

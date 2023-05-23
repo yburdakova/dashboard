@@ -35,14 +35,14 @@ const NavButton = ({ title, customFunction, icon, color, dotColor }) => (
 const Navbar = () => {
 
     const {
-        
         setActiveMenu, 
         handleClick, 
         isClicked, 
-        setIsClicked, 
         screenSize, 
         setScreenSize,
-        currentColor
+        currentColor,
+        isCartVisible,
+        setIsCartVisible,
     } = useStateContext();
 
     useEffect(()=> {
