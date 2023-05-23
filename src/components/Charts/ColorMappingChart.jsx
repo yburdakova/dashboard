@@ -17,7 +17,7 @@ const ColorMapping = () => {
         primaryXAxis={ColorMappingPrimaryXAxis}
         primaryYAxis={ColorMappingPrimaryYAxis}
         chartArea={{ border: { width: 0 } }}
-        legendSettings={{ mode: 'Range', background: 'white' }}
+        legendSettings={{ mode: 'Range', background: `${currentMode === 'Dark' ? '#33373E' : '#fff'}`, textStyle: { color:`${currentMode === 'Dark' ? '#FFFFFF' : '#33373E'}`, size: '16px', fontFamily:['Open Sans', 'sans-serif']}, }}
         tooltip={{ enable: true }}
         background={currentMode === 'Dark' ? '#33373E' : '#fff'}
         >
