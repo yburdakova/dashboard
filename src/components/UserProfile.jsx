@@ -6,7 +6,7 @@ import { useStateContext } from '../contexts/ContextProvider';
 import avatar from '../data/avatar.jpg';
 
 const UserProfile = () => {
-    const { currentColor } = useStateContext();
+    const { currentColor, currentMode } = useStateContext();
 
     return (
         <div className="nav-item absolute right-1 top-16 bg-white dark:bg-[#42464D] p-8 rounded-lg w-96 shadow-xl">
@@ -27,7 +27,7 @@ const UserProfile = () => {
             </div>
             <div>
                 {userProfileData.map((item, index) => (
-                <div key={index} className="flex gap-5 border-b-1 border-color p-4 hover:bg-light-gray cursor-pointer  dark:hover:bg-[#42464D]">
+                <div key={index} className="flex gap-5 border-b-1 border-color p-4 hover:bg-light-gray cursor-pointer  dark:hover:bg-[#42464D]  dark:border-gray-400">
                     <button
                     type="button"
                     style={{ color: item.iconColor, backgroundColor: item.iconBg }}

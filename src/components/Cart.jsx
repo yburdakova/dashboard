@@ -26,7 +26,7 @@ const Cart = () => {
             {cartData?.map((item, index) => (
             <div key={index}>
                 <div>
-                <div className="flex items-center gap-5 p-4 leading-8 border-b-1 border-color dark:border-gray-600">
+                <div className="flex items-center gap-5 p-4 leading-8 border-b-1 border-color dark:border-gray-400">
                     <img className="w-24 rounded-lg h-80" src={item.image} alt="" />
                     <div>
                     <p className="font-semibold ">{item.name}</p>
