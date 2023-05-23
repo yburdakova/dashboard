@@ -3,13 +3,11 @@ import { AccumulationChartComponent, AccumulationSeriesCollectionDirective, Accu
 import { Browser } from '@syncfusion/ej2-base';
 import {pieChartData} from '../../data/dummy';
 import { useStateContext } from '../../contexts/ContextProvider';
-import { BiBorderRadius } from 'react-icons/bi';
+
 
 const PieChart = () => {
 
     const { currentMode } = useStateContext();
-
-   
 
     return (
         <AccumulationChartComponent 

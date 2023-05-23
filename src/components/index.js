@@ -16,4 +16,7 @@ export { default as SplineAreaChart } from './Charts/SplineAreaChart';
 export { default as PieChart } from './Charts/PieChart';
 export { default as SparkLine } from './Charts/SparkLine';
 export { default as StackedChart } from './Charts/StackedChart';
+export { default as BarChart } from './Charts/BarChart';
+export { default as FinancialChart } from './Charts/FinancialChart';
+export { default as ColorMappingChart} from './Charts/ColorMappingChart';
 
