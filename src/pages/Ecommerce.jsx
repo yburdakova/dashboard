@@ -9,7 +9,7 @@ import { useStateContext } from '../contexts/ContextProvider';
 
 const Ecommerce = () => {
 
-    const {currentColor} = useStateContext();
+    const {currentColor, currentMode} = useStateContext();
     return (
         <div className="mt-24">
             <div className="flex flex-wrap justify-center lg:flex-nowrap ">
@@ -69,7 +69,7 @@ const Ecommerce = () => {
                             </div>
                         </div>
                         <div className="flex flex-wrap justify-center gap-10 mt-10">
-                            <div className="pr-10 m-4 border-r-1 border-color">
+                            <div className={`pr-10 m-4 border-r-1 ${currentMode === 'Dark' ?  'border-white' : 'border-color'}`}>
                                 <div>
                                     <p>
                                         <span className="text-3xl font-semibold">$93,438</span>

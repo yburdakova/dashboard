@@ -19,4 +19,5 @@ export { default as StackedChart } from './Charts/StackedChart';
 export { default as BarChart } from './Charts/BarChart';
 export { default as FinancialChart } from './Charts/FinancialChart';
 export { default as ColorMappingChart} from './Charts/ColorMappingChart';
+export { default as PyramidChart} from './Charts/PyramidChart';
 

@@ -14,7 +14,6 @@ const BarChart = () => {
             style={{ textAlign: "center" }} 
             legendSettings={{ 
                 visible: true,
-                
                 textStyle: { color:`${currentMode === 'Dark' ? '#FFFFFF' : '#33373E'}`, size: '16px', fontFamily:['Open Sans', 'sans-serif']},
             }} 
             primaryXAxis={barPrimaryXAxis}
