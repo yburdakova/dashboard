@@ -6,7 +6,7 @@ import { Header } from '../components';
 
 const Employees = () => {
     return (
-        <div className='p-2 m-2 bg-white rounded md:m-10 md:p-1-3xl dark:bg-main-dark-bg'>
+        <div className='p-2 mt-20 bg-white rounded md:m-10 md:p-1-3xl dark:bg-main-dark-bg'>
             <Header
                 category='Page'
                 title="Employees"
